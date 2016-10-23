@@ -1,0 +1,34 @@
+{
+  "name": "node-stats-emit",
+  "version": "1.0.0",
+  "description": "Node.js performance statistics emitter",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotchev/node-stats-emit.git"
+  },
+  "keywords": [
+    "node",
+    "performance",
+    "statistics"
+  ],
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "author": "Peter Dotchev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dotchev/node-stats-emit/issues"
+  },
+  "homepage": "https://github.com/dotchev/node-stats-emit#readme",
+  "dependencies": {
+    "cpu-percentage": "^1.0.2",
+    "lodash": "^4.16.4"
+  }
+}
