@@ -30,6 +30,7 @@
   "dependencies": {
     "async": "^2.1.2",
     "cpu-percentage": "^1.0.2",
-    "lodash": "^4.16.4"
+    "lodash": "^4.16.4",
+    "request-stats": "^1.0.1"
   }
 }
