@@ -1,10 +1,10 @@
-# node-stats-emit
+# stats-beat
 Node.js performance statistics emitter
 
 ## Install
 
 ```sh
-npm install --save node-stats-emit
+npm install --save stats-beat
 ```
 
 **Note:** requires node v4 or higher.
@@ -12,16 +12,16 @@ npm install --save node-stats-emit
 ## Usage
 
 ```js
-const statsEmitter = require('node-stats-emit')();
+const statsBeat = require('stats-beat')();
 
 var app = express();
 //...
 var server = app.listen(PORT);
-statsEmitter.start({ server });
+statsBeat.start({ server });
 ```
 
 ```sh
-export STATS_EMIT=all
+export STATS_BEAT=all
 npm start
 ```
 
@@ -32,7 +32,7 @@ Then all performance metrics will be prtinted on the console each 5 seconds
 
 To report only CPU and memory ech 2s, use this command:
 ```sh
-export STATS_EMIT='period=2&cpu&rss'
+export STATS_BEAT='period=2&cpu&rss'
 npm start
 ```
 
@@ -40,13 +40,13 @@ You can register a listener to process the performance metrics in a custom way,
 e.g. write them in a csv file or send them to a central service.
 
 ```js
-const statsEmitter = require('node-stats-emit')();
+const statsBeat = require('stats-beat')();
 
 var app = express();
 //...
 var server = app.listen(PORT);
-statsEmitter.start({ server });
-statsEmitter.on('stats', (stats) => {
+statsBeat.start({ server });
+statsBeat.on('stats', (stats) => {
   // process stats
 });
 ```

@@ -1,6 +1,6 @@
 {
-  "name": "node-stats-emit",
-  "version": "1.0.0",
+  "name": "stats-beat",
+  "version": "1.0.1",
   "description": "Node.js performance statistics emitter",
   "main": "lib/index.js",
   "scripts": {
@@ -8,12 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dotchev/node-stats-emit.git"
+    "url": "git+https://github.com/dotchev/stats-beat.git"
   },
   "keywords": [
     "node",
     "performance",
-    "statistics"
+    "statistics",
+    "metrics"
   ],
   "files": [
     "lib"
@@ -24,9 +25,9 @@
   "author": "Peter Dotchev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dotchev/node-stats-emit/issues"
+    "url": "https://github.com/dotchev/stats-beat/issues"
   },
-  "homepage": "https://github.com/dotchev/node-stats-emit#readme",
+  "homepage": "https://github.com/dotchev/stats-beat#readme",
   "dependencies": {
     "async": "^2.1.2",
     "cpu-percentage": "^1.0.2",
