@@ -63,10 +63,12 @@ statsBeat.on('stats', (stats) => {
 | `rss`      | `rssMB`      | Process memory (resident set size) in MB. See [process.memoryUsage()](https://nodejs.org/api/process.html#process_process_memoryusage) |
 | `heap`     | `heapMB`     | V8 heap used. See [process.memoryUsage()](https://nodejs.org/api/process.html#process_process_memoryusage) |
 | `rps`      | `rps`        | Completed requests per second. |
-| `restime`  | `resTime_ms` | Response time in ms. |
-| `reqbytes` | `reqBytes`   | Total request size in bytes. |
-| `resbytes` | `resBytes`   | Total response size in bytes. |
+| `restime`  | `resTime_ms` | Average response time in ms. |
+| `reqbytes` | `reqBytes`   | Average request size in bytes. |
+| `resbytes` | `resBytes`   | Average response size in bytes. |
 | `rxrate`   | `rxKBs`      | KB received per second |
 | `txrate`   | `txKBs`      | KB sent per second |
 | `numconn`  | `numconn`    | Number of concurrent connections on the server. See [server.getConnections()](https://nodejs.org/api/net.html#net_server_getconnections_callback) |
 | `evloop`   | `evloop_us`  | Node event loop latency in microseconds |
+
+Time-based statistics are reset on each event, i.e. they are measured since the previous event.
