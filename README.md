@@ -1,4 +1,7 @@
+[![npm](https://img.shields.io/npm/v/stats-beat.svg)](https://www.npmjs.com/package/stats-beat)
+
 # stats-beat
+
 Node.js performance statistics emitter
 
 ## Install
