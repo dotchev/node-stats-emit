@@ -31,6 +31,7 @@
   "dependencies": {
     "async": "^2.1.2",
     "clockit": "^1.0.1",
+    "cpu-gauge": "^1.1.0",
     "cpu-percentage": "^1.0.2",
     "lodash": "^4.16.4",
     "request-stats": "^1.0.1"
